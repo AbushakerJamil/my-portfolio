@@ -1,4 +1,6 @@
 ## <a name="introduction">🤖 Introduction</a>
+![Project Overview](./protfolio.webp)
+
 
 Welcome to my Portfolio Project!
 This project showcases my skills and experience as a Web & Blockchain Developer, highlighting projects I’ve worked on, technologies I specialize in, and my journey in software development.
