@@ -107,7 +107,6 @@ const Header = ({ onShowCv }) => {
     setIsOpen(false);
     setActiveMegaMenu(null);
   };
-  
 
   return (
     <>
@@ -121,14 +120,13 @@ const Header = ({ onShowCv }) => {
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
-            {/* Logo */}
             <div
               onClick={scrollToProjects}
               className="flex items-center space-x-2 group cursor-pointer"
             >
-              <div className="relative w-10 h-10 rounded-full overflow-hidden border-2 border-purple-500 group-hover:border-fuchsia-500 transition-all duration-300">
-                <div className="absolute inset-0 bg-gradient-to-br from-purple-600 to-fuchsia-600 flex items-center justify-center text-white font-bold text-xl">
-                  A
+              <div className="relative w-12 h-12 rounded-full overflow-hidden border-[1px] border-purple-500 group-hover:border-fuchsia-500 transition-all duration-300">
+                <div className="absolute inset-0 flex items-center justify-center  font-bold text-xl">
+                  <img src="/mylogoo.webp" alt="mylogoo" />
                 </div>
               </div>
               <span className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-fuchsia-400 transition-all duration-300">
@@ -209,17 +207,15 @@ const Header = ({ onShowCv }) => {
               })}
             </nav>
 
-            {/* Right Side Actions */}
             <div className="hidden lg:flex items-center space-x-3">
               <a href="#cv">
-              <button
-                onClick={onShowCv}
-                
-                className="flex items-center space-x-2 px-4 py-2 rounded-lg font-medium transition-all duration-300 bg-gradient-to-r from-purple-600 to-fuchsia-600 text-white hover:from-purple-700 hover:to-fuchsia-700 shadow-lg hover:shadow-purple-500/50"
-              >
-                <FileText size={18} />
-                <span>Resume</span>
-              </button>
+                <button
+                  onClick={onShowCv}
+                  className="flex items-center space-x-2 px-4 py-2 rounded-lg font-medium transition-all duration-300 bg-gradient-to-r from-purple-600 to-fuchsia-600 text-white hover:from-purple-700 hover:to-fuchsia-700 shadow-lg hover:shadow-purple-500/50"
+                >
+                  <FileText size={18} />
+                  <span>Resume</span>
+                </button>
               </a>
             </div>
 
@@ -308,7 +304,6 @@ const Header = ({ onShowCv }) => {
               })}
             </nav>
 
-            {/* Mobile Resume Button */}
             <div className="p-6 border-t border-gray-800">
               <button
                 onClick={() => {

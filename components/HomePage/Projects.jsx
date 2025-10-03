@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import {
   ExternalLink,
   Github,
@@ -19,9 +19,7 @@ const Projects = () => {
   const [activeFilter, setActiveFilter] = useState("All");
   const [hoveredCard, setHoveredCard] = useState(null);
 
-  // Smooth 3D tilt effect on mouse move - FIXED for clickable links
   const handleMouseMove = (e, index) => {
-    // Only apply tilt if not hovering over links
     if (e.target.tagName === 'A' || e.target.closest('a')) {
       return;
     }
@@ -139,7 +137,6 @@ const Projects = () => {
   return (
     <section className="overflow-hidden min-h-screen bg-gradient-to-br bg-[#0E0B12]/90  py-20 px-6">
       <div className="max-w-7xl mx-auto">
-        {/* Title */}
         <div ref={titleRef} className="text-center mb-12">
           <h2 className="text-6xl md:text-7xl font-bold text-white mb-4">
             Featured{" "}
@@ -152,7 +149,6 @@ const Projects = () => {
           </p>
         </div>
 
-        {/* Filter Buttons */}
         <div
           ref={filterRef}
           className="flex flex-wrap justify-center gap-4 mb-16"
@@ -190,12 +186,10 @@ const Projects = () => {
                 ref={(el) => (projectCardsRef.current[index] = el)}
                 className="relative bg-gray-800 rounded-3xl overflow-hidden border border-gray-700 shadow-2xl h-full group transition-all duration-300 hover:shadow-purple-500/20"
               >
-                {/* Animated Background Glow */}
                 <div
                   className={`absolute inset-0 bg-gradient-to-br ${project.gradient} opacity-0 group-hover:opacity-10 transition-opacity duration-500 blur-xl pointer-events-none`}
                 ></div>
 
-                {/* Featured Badge */}
                 {project.featured && (
                   <div className="absolute top-4 right-4 z-30 bg-gradient-to-r from-yellow-400 to-orange-500 text-white px-3 py-1 rounded-full text-xs font-bold flex items-center gap-1 shadow-lg pointer-events-none">
                     <Sparkles className="w-3 h-3" />
@@ -203,7 +197,6 @@ const Projects = () => {
                   </div>
                 )}
 
-                {/* Project Image/Icon */}
                 <div
                   className={`relative h-48 bg-gradient-to-br ${project.gradient} flex items-center justify-center overflow-hidden`}
                 >
@@ -227,7 +220,6 @@ const Projects = () => {
                   
                   <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-all duration-300 pointer-events-none"></div>
 
-                  {/* Hover Overlay Links - WORKING NOW */}
                   <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-all duration-300">
                     <a
                       href={project.github}
@@ -249,7 +241,6 @@ const Projects = () => {
                     </a>
                   </div>
 
-                  {/* Scan Line Effect */}
                   <div className="absolute inset-0 overflow-hidden opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none">
                     <div className="absolute w-full h-1 bg-gradient-to-r from-transparent via-white to-transparent animate-scan"></div>
                   </div>
@@ -286,7 +277,6 @@ const Projects = () => {
                     ))}
                   </div>
 
-                  {/* View Details Button - CLICKABLE */}
                   <a
                     href={project.demo}
                     target="_blank"

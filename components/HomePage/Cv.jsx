@@ -7,7 +7,6 @@ export default function CV() {
       className="min-h-screen bg-gradient-to-r from-fuchsia-600/4 to-purple-700/4 text-white flex flex-col items-center justify-center py-16 px-6"
     >
       <div className="max-w-4xl w-full bg-gray-800 rounded-2xl shadow-xl p-10 border border-gray-700">
-        {/* PDF Preview */}
         <div className="w-full h-[600px]">
           <iframe
             src="/resume.pdf" 
@@ -17,7 +16,6 @@ export default function CV() {
           />
         </div>
 
-        {/* Download Button */}
         <div className="text-center mt-6">
           <a
             href="/resume.pdf"

@@ -83,7 +83,6 @@ const Contact = () => {
     }
   };
 
-  // Removed the dummy handleSubmit since it's not needed
 
   const contactInfo = [
     {

@@ -4,7 +4,7 @@ export const metadata = {
   title: "A .Jamil",
   description: "Abushaker Jamil",
   icons: {
-    icon: "/logo.png", 
+    icon: "/mylogoo.webp", 
   },
 };
 

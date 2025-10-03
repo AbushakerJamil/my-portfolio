@@ -50,7 +50,7 @@ Make sure you have the following installed on your machine:
 **Cloning the Repository**
 
 ```bash
-git clone git@github.com:AbushakerJamil/my-portfolio
+git clone https://github.com/AbushakerJamil/my-portfolio.git
 cd my-portfolio
 ```
 

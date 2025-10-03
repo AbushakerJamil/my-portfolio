@@ -1,3 +1,71 @@
+const mylogo = (
+  <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="coolGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+        <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+      </linearGradient>
+      <linearGradient id="lightGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" style="stop-color:#4facfe;stop-opacity:1" />
+        <stop offset="100%" style="stop-color:#00f2fe;stop-opacity:1" />
+      </linearGradient>
+    </defs>
+
+    <circle
+      cx="100"
+      cy="100"
+      r="90"
+      fill="none"
+      stroke="url(#lightGradient)"
+      stroke-width="2"
+      opacity="0.3"
+    />
+
+    <circle
+      cx="100"
+      cy="100"
+      r="75"
+      fill="none"
+      stroke="url(#coolGradient)"
+      stroke-width="3"
+      opacity="0.5"
+    />
+
+    <path
+      d="M 100 55 L 120 95 L 112 95 L 108 85 L 92 85 L 88 95 L 80 95 Z M 95 78 L 105 78 L 100 65 Z"
+      fill="url(#coolGradient)"
+    />
+
+    <circle cx="125" cy="95" r="3" fill="url(#lightGradient)" />
+
+    <text
+      x="100"
+      y="125"
+      font-family="Arial, sans-serif"
+      font-size="20"
+      font-weight="300"
+      fill="url(#coolGradient)"
+      text-anchor="middle"
+      letter-spacing="2"
+    >
+      Jamil
+    </text>
+
+    <line
+      x1="70"
+      y1="135"
+      x2="130"
+      y2="135"
+      stroke="url(#lightGradient)"
+      stroke-width="1"
+      opacity="0.5"
+    />
+
+    <circle cx="65" cy="135" r="2" fill="url(#coolGradient)" opacity="0.6" />
+    <circle cx="135" cy="135" r="2" fill="url(#coolGradient)" opacity="0.6" />
+  </svg>
+);
+
 const HEADER_1 = (
   <svg
     xmlns="http://www.w3.org/2000/svg"

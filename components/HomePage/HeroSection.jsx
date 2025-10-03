@@ -61,7 +61,6 @@ const PortfolioHero = ({  onShowCv }) => {
     return () => clearInterval(typingInterval);
   }, [currentRoleIndex]);
 
-  // Particle animation
   useEffect(() => {
     const canvas = canvasRef.current;
     if (!canvas) return;
@@ -213,7 +212,6 @@ const PortfolioHero = ({  onShowCv }) => {
 
       <div className="container mx-auto px-4 py-20 md:py-28 relative z-10">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12 md:gap-16">
-          {/* Left Content */}
           <div className="w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left">
             <div className="inline-block p-2 px-4 rounded-full bg-gradient-to-r from-fuchsia-500/10 to-purple-600/10 mb-6 animate-pulse-slow">
               <p className="text-sm font-medium bg-clip-text text-transparent bg-gradient-to-r from-fuchsia-500 to-purple-600">
@@ -284,7 +282,6 @@ const PortfolioHero = ({  onShowCv }) => {
             </div>
           </div>
 
-          {/* Right Content - Profile Card */}
           <div className="w-full lg:w-1/2 max-w-lg mx-auto relative">
             {isLoading && (
               <div className="absolute inset-0 z-20 flex items-center justify-center bg-black/50 backdrop-blur-sm rounded-xl">

@@ -25,7 +25,6 @@ const About = () => {
 
   gsap.registerPlugin(ScrollTrigger);
 
-  // Lorem Text Animation
   useEffect(() => {
     const loremText = loremTextRef.current;
     if (!loremText) return;
@@ -43,7 +42,7 @@ const About = () => {
 
     const chars = loremText.querySelectorAll(".char-lorem");
 
-    // Initial state - hidden
+    // Initial state
     gsap.set(chars, {
       opacity: 0,
       y: 60,
@@ -258,10 +257,8 @@ const About = () => {
         {/* Animated Lorem Text Container */}
         <div className="relative mb-12 px-2 sm:px-4">
           <div ref={loremContainerRef} className="relative w-full">
-            {/* Background Glow Effect */}
             <div className="absolute -inset-2 sm:-inset-4 md:-inset-6 bg-gradient-to-r from-blue-600/10 via-purple-600/10 to-pink-600/10 blur-xl sm:blur-2xl rounded-2xl pointer-events-none"></div>
 
-            {/* Content Card */}
             <div className="relative bg-gradient-to-br from-slate-900/70 via-indigo-900/50 to-purple-900/50 backdrop-blur-md rounded-xl sm:rounded-2xl p-5 sm:p-7 md:p-9 border border-purple-500/30 shadow-2xl w-full overflow-hidden">
               <p
                 ref={loremTextRef}
@@ -290,7 +287,6 @@ const About = () => {
                 building the financial systems of tomorrow.
               </p>
 
-              {/* Decorative Bottom Line */}
               <div className="mt-5 sm:mt-7 h-0.5 sm:h-1 w-24 sm:w-28 md:w-36 bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 rounded-full shadow-lg"></div>
             </div>
           </div>
@@ -374,7 +370,6 @@ const About = () => {
         </div>
       </div>
 
-      {/* Custom Styles */}
       <style jsx>{`
         .char-lorem {
           display: inline-block;

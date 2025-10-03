@@ -36,26 +36,26 @@ export default function Home() {
   //   }
   // }, []);
 
-  const toggleDarkMode = () => {
-    const newMode = !isDarkMode;
-    setIsDarkMode(newMode);
-    applyTheme(newMode);
+  // const toggleDarkMode = () => {
+  //   const newMode = !isDarkMode;
+  //   setIsDarkMode(newMode);
+  //   applyTheme(newMode);
 
-    try {
-      localStorage.setItem("darkMode", newMode.toString());
-    } catch (error) {
-      console.error("Error saving theme preference", error);
-    }
-  };
+  //   try {
+  //     localStorage.setItem("darkMode", newMode.toString());
+  //   } catch (error) {
+  //     console.error("Error saving theme preference", error);
+  //   }
+  // };
 
-  const applyTheme = (dark) => {
-    if (typeof document === "undefined") return;
-    if (dark) {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-  };
+  // const applyTheme = (dark) => {
+  //   if (typeof document === "undefined") return;
+  //   if (dark) {
+  //     document.documentElement.classList.add("dark");
+  //   } else {
+  //     document.documentElement.classList.remove("dark");
+  //   }
+  // };
 
   return (
     <div
@@ -81,7 +81,6 @@ export default function Home() {
           <Projects  />
         </section>
 
-        {/* Conditionally Render CV */}
         {showCV && (
           <section id="cv">
             <Cv />
