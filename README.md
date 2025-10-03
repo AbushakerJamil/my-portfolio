@@ -1,5 +1,5 @@
 ## <a name="introduction">🤖 Introduction</a>
-![Project Overview](./protfolio.webp)
+![Project Overview](public/protfolio.webp)
 
 
 Welcome to my Portfolio Project!
